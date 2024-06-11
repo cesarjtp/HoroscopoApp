@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="150dp">
+
+<TextView
+    android:id="@+id/nameTextView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Horoscopo name"
+    android:textSize="40sp"/>
+
+    <TextView
+        android:id="@+id/Aries"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Aries"
+        android:layout_gravity="right">
+
+    </TextView>
+
+    <TextView
+    android:id="@+id/Tauro"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Tauro"
+    android:layout_gravity="right">
+
+</TextView>
+
+
+    </LinearLayout>
