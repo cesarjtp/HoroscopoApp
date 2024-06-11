@@ -11,23 +11,20 @@
     android:text="Horoscopo name"
     android:textSize="40sp"/>
 
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/aries"/>
     <TextView
-        android:id="@+id/Aries"
+        android:id="@+id/descrip"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Aries"
+        android:text="Descripcion"
         android:layout_gravity="right">
 
     </TextView>
 
-    <TextView
-    android:id="@+id/Tauro"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:text="Tauro"
-    android:layout_gravity="right">
-
-</TextView>
 
 
     </LinearLayout>

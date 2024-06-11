@@ -3,6 +3,7 @@ package com.example.horoscopeapp
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.horoscopoapp.Horoscopo
@@ -39,8 +40,12 @@ class HoroscopoAdapter(private val dataSet: List<Horoscopo>) :
 // Esta clase se encarga de guardarnos la vista y no tener que inflarla de nuevo
 class HoroscopoViewHolder(view: View) : RecyclerView.ViewHolder(view) {
     val textView: TextView
+    val descrip: TextView
+    val logoView : ImageView
 
     init {
         textView = view.findViewById(R.id.nameTextView)
+        descrip = view.findViewById(R.id.descrip)
+        logoView = view.findViewById(R.id.image)
     }
 }

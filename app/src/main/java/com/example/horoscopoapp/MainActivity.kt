@@ -12,18 +12,18 @@ import com.example.horoscopeapp.HoroscopoAdapter
 class MainActivity : AppCompatActivity() {
 
     val horoscopoList: List<Horoscopo> = listOf(
-        Horoscopo("Aries", "Aries", 0),
-        Horoscopo("Tauro", "Tauro", 0),
-        Horoscopo("Gemini", "Gemini", 0),
-        Horoscopo("Cancer", "Cancer", 0),
-        Horoscopo("Leo", "Leo", 0),
-        Horoscopo("Virgo", "Virgo", 0),
-        Horoscopo("Libra", "Libra", 0),
-        Horoscopo("Scorpio", "Scorpio", 0),
-        Horoscopo("Sagitario", "Sagitario", 0),
-        Horoscopo("Capricornio", "Capricornio", 0),
-        Horoscopo("Aquario", "Aquario", 0),
-        Horoscopo("Pisces", "Pisces", 0)
+        Horoscopo("Aries", "Aries", R.drawable.aries, 0),
+        Horoscopo("Tauro", "Tauro", R.drawable.taurus, 0),
+        Horoscopo("Gemini", "Gemini", R.drawable.gemini, 0),
+        Horoscopo("Cancer", "Cancer", R.drawable.cancer, 0),
+        Horoscopo("Leo", "Leo", R.drawable.leo, 0),
+        Horoscopo("Virgo", "Virgo",R.drawable.virgo, 0),
+        Horoscopo("Libra", "Libra", R.drawable.libra, 0),
+        Horoscopo("Scorpio", "Scorpio", R.drawable.scorpio, 0),
+        Horoscopo("Sagitario", "Sagitario", R.drawable.sagittarius,0),
+        Horoscopo("Capricornio", "Capricornio", R.drawable.capricorn,0),
+        Horoscopo("Aquario", "Aquario", R.drawable.aquarius,0),
+        Horoscopo("Pisces", "Pisces", R.drawable.pisces,0)
 
     )
 
@@ -38,5 +38,7 @@ class MainActivity : AppCompatActivity() {
         val adapter = HoroscopoAdapter(horoscopoList)
         recyclerView.adapter = adapter
         recyclerView.layoutManager = LinearLayoutManager(this)
+
+        getDrawable(R.drawable.aries)
     }
 }
