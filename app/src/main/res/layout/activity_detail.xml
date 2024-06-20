@@ -1,41 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".activities.DetailActivity">
 
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_margin="8dp"
         tools:src="@drawable/aries"/>
+    <ImageView
+        android:id="@+id/menu_favorite"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="bottom|end"
+        android:scaleType="centerCrop"
+        android:src="@android:drawable/ic_menu_compass"
+        app:tint="@color/black" />
+    </FrameLayout>
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:text="@string/app_name"
+        android:textAlignment="center"
         android:textSize="24sp"
-        android:textStyle="bold"
-        android:textAlignment="center"/>
+        android:textStyle="bold" />
 
-    <FrameLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+
     <TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:text="texto de descripcion"
         android:textAlignment="center"
         android:textSize="30sp"/>
     <TextView
         android:id="@+id/dailyHoroscopeTextView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:textSize="18sp"
         android:justificationMode="inter_word"
         android:padding="16dp"
@@ -43,8 +54,23 @@
 
     <FrameLayout
         android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        />
+        android:layout_height="wrap_content">
 
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:text="Adelante" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Atras"
+        android:textAlignment="center" />
+    </FrameLayout>
 
 </LinearLayout>
+
+

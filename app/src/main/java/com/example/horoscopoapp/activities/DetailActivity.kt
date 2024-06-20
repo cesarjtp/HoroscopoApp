@@ -64,7 +64,8 @@ class DetailActivity : AppCompatActivity() {
 
     fun setFavoriteIcon () {
         if (isFavorite) {
-            favoriteMenuItem.setIcon(android.R.drawable.btn_star)
+            favoriteMenuItem.setIcon(android.R.drawable.btn_star_big_on)
+
         } else {
             favoriteMenuItem.setIcon(android.R.drawable.btn_star_big_off)
         }
@@ -120,6 +121,10 @@ class DetailActivity : AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
+            android.R.id.home -> {
+                finish()
+                true
+            }
             R.id.menu_favorite -> {
                 if (isFavorite) {
                     session.setFavoriteHoroscope("")
